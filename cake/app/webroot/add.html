@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+<title>mitayon</title>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="/js/kickstart/prettify.js"></script>                                   <!-- PRETTIFY -->
+<script type="text/javascript" src="/js/kickstart/kickstart.js"></script>                                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="/css/kickstart/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="/css/style-mitayon.css" media="all" />                          <!-- CUSTOM STYLES -->
+<script src="/js/suggest.js"></script>
+<script src="/js/list.js"></script>
+    <script type="text/javascript" language="javascript">
+    <!--
+      // wondowのonloadイベントでSuggestを生成
+      // (listは、list.js内で定義している)
+var start = function(){
+			  var tabbars = document.getElementById('tabbar').getElementsByTagName('li');
+			  for(var idx in tabbars){
+			  	if(tabbars[idx].className.indexOf('current')>=0) {
+			  		break;
+				}
+			  }
+              var suggest = new Suggest.LocalMulti("text", "suggest", list[idx], {dispAllKey: true});
+              //var select = document.getElementById('select')
+              var change = function(){
+				  for(var idx in tabbars){
+				  	if(tabbars[idx].className.indexOf('current')>=0) {
+				  		break;
+					}
+				  }
+                suggest.candidateList = list[idx];
+              };
+			  // for(var idx in tabbars){
+     //        	tabbars[idx].lastChild.addEventListener ?
+     //            tabbars[idx].lastChild.addEventListener('click', change, false) :
+     //            tabbars[idx].lastChild.attachEvent('onclick', change);
+			  // }
+            };
+window.addEventListener ?
+  window.addEventListener('load', start, false) :
+  window.attachEvent('onload', start);
+  //-->
+    </script>
+<!--/row-->
+</head><body><a id="top-of-page"></a><div id="wrap" class="clearfix">
+<!-- ===================================== END HEADER ===================================== -->
+
+
+	<!-- 
+	
+		ADD YOU HTML ELEMENTS HERE
+		
+		Example: 2 Columns
+	 -->
+<!-- Tabs Left -->
+<ul id="tabbar" class="tabs left">
+<li><a href="#tabr1">映画</a></li>
+<li><a href="#tabr2">テレビ</a></li>
+<li><a href="#tabr3">本</a></li>
+</ul>
+
+<div id="tabr1" class="tab-content">
+	<form>
+		<div class="col_12">
+			<!-- Text Field -->
+			<label for="text">タイトル</label>
+			<input id="text" type="text" />
+			<div id="suggest"></div>
+		</div>
+		<!-- Radio -->
+		<div class="col_12">
+			<input type="radio" name="radio" id="radio1" />
+			<label for="radio1" class="inline">Option1</label>
+		</div>
+	</form>
+</div>
+<div id="tabr2" class="tab-content">
+
+</div>
+<div id="tabr3" class="tab-content">Tab3</div>
+
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
+<div id="footer">
+&copy; Copyright 2011–2012 All Rights Reserved. This website was built with <a href="http://www.99lime.com">mitayon.com</a>
+<a id="link-top" href="#top-of-page">Top</a>
+</div>
+
+</div><!-- END WRAP -->
+</body></html>
