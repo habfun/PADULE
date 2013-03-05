@@ -300,38 +300,18 @@ padding: 7px 9px;
 </head>
 
 <body>
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-
-            <div class="container">
-            	<img src="/img/bg.png" alt="">
-
-                <div class="carousel-caption">
-                    <h1>日程調整を、もっと楽しく</h1>
-
-                    <p class="lead">煩わしい日程にうんざりしたことはありませんか？
-                        Puduleを使えば、面倒な調整からは解放され、簡単に日程を調整することができます。
-                        そう、まるでパズルを楽しむように。
-                    <a class="btn btn-large btn-primary" href="https://dl.dropbox.com/u/3601859/AdjustInterview/brand.html#">今すぐ始める！</a>
-                </p></div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- /.carousel -->
 <div class="container">
 <?php if ($login) { ?>
 <center><a class="btn btn-large btn-primary" href="/schedules/">スケジュールの調整をする</a></center>
 <?php }else{ ?>
-        <form class="form-signin" action="/users/add" id="UserAddForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
-            <h3>PADULE 事前登録</h3>
-            <p>パズル感覚の面接スケジュール調整ツール『PADULE』事前予約を受付中です。<br /><br />ご興味のある方はメールアドレスをご登録ください！</p>
+        <form class="form-signin" action="/users/login" id="UserAddForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+            <h3>PADULE ログイン</h3>
+            <p>メールアドレスとパスワードを入力してください。</p>
         <input type="text" name="data[User][username]" class="input-block-level" placeholder="メールアドレスを入力してください。" label="">
+        <input type="password" name="data[User][password]" class="input-block-level" placeholder="パスワードを入力してください。" label="">
 
-        <button class="btn btn-large btn-primary" type="submit">事前登録する！</button>
+        <button class="btn btn-large btn-primary" type="submit">ログインする</button>
 
       </form>
 <?php } ?>
@@ -342,42 +322,6 @@ padding: 7px 9px;
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-
-            <h2>シンプルで<br />簡単に使える！</h2>
-
-            <p>面接内容を設定して、URLを応募者に送るだけ。あとは応募者が自ら入力し、システムが自動的に適切な日程調整を採用担当者様にご推薦いたします。</p>
-
-        </div>
-        <!-- /.span4 -->
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-
-            <h2>スピーディーに<br />調整できる！</h2>
-
-            <p>URLを送るだけで採用担当者様と応募者が直接、調整できるので、人材会社が仲介して遅くなる心配もありません。</p>
-        </div>
-        <!-- /.span4 -->
-
-        <div class="span4">
-            <img class="img-circle" data-src="/js/holder.js/140x140">
-
-            <h2>一切費用は<br />かかりません！</h2>
-
-            <p>本サービスは広告費で運用されておりますので、採用ご担当者様に費用は頂戴いたしません。社内承認不要でお気軽にお使いいただく事ができます。</p>
-
-        </div>
-        <!-- /.span4 -->
-    </div>
-    <!-- /.row -->
-
-    <br><br>
-
-    <!-- FOOTER -->
     <footer>
 
         <p>© 2013 Padule Inc. ·  · started by <a href="http://tokyo.startupweekend.org/">Startup Weekend Tokyo</a></p>

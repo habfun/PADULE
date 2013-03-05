@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)/schedule_post.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/fullcalendar.js"></script>
+    <script type="text/javascript" src="/js/gcal.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/fullcalendar.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Padule ー日程調整をパズル感覚で</title>
+<script type="text/javascript">
+
+    $(function () {
+
+        // ダミーのイベントを入れるための変数たち
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        var calendar = $('#calendar-area').fullCalendar({
+            dayNames:['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],
+            dayNamesShort:['日', '月', '火', '水', '木', '金', '土'],
+            titleFormat:{
+                month:'yyyy年 M月',
+                week:'[yyyy年 ]M月 d日{ —[yyyy年 ][ M月] d日}',
+                day:'yyyy年 M月 d日 dddd'
+            },
+            buttonText:{
+                today:'今日'
+            },
+            editable:true,
+            disableDragging:true, // evetnClickプロパティを有効にするために必要
+            eventClick:function (calEvent, jsEvent, view) {
+                var title = calEvent.title;
+                var start_time = title.split("〜")[0];
+                var end_time = title.split("〜")[1];
+
+                var target_date = __date2string(calEvent.start);
+                // モーダルの準備
+                $("#modal-Label").html("承認する。");
+                $("#start_time").val(start_time);
+                $("#end_time").val(end_time);
+                $("#delete-modal-btn").attr("style", "");
+                $('#edit-modal').modal();
+
+                // 確定ボタンクリック
+                $("#confirm-modal-btn").die().live("click", function () {
+
+                    location.href = "http://padule.me/schedules/added/";
+
+                });
+
+                $("#delete-modal-btn").die().live("click", function() {
+
+                });
+
+                calEvent.title = title;
+                calendar.fullCalendar('updateEvent', event);
+            },
+            selectable:true,
+            selectHelper:true,
+            select:function (start, end, allDay) {
+                var target_date = __date2string(start);
+                // モーダルの準備
+                $("#modal-Label").html(target_date + "の候補日程を追加");
+                $("#delete-modal-btn").attr("style", "display:none");
+                $('#edit-modal').modal();
+
+                // 確定ボタンクリック
+                $("#confirm-modal-btn").die().live("click", function () {
+
+                    var start_time = $("#start_time").val();
+                    var end_time = $("#end_time").val();
+
+                    if (start_time != "" && end_time != "") {
+                        // エラーを消す
+                        $("#modal-alart-area").removeClass("alert alert-error").html("");
+
+                        var title = start_time + "〜" + end_time;
+                        calendar.fullCalendar('renderEvent',
+                                {
+                                    title:title,
+                                    start:start,
+                                    end:end,
+                                    allDay:allDay
+                                },
+                                true // make the event "stick"
+                        );
+                        $("#edit-modal").modal("hide");
+                    } else {
+                        $("#modal-alart-area").addClass("alert alert-error")
+                                .html("開始・終了時刻が入力されていません");
+                    }
+
+                });
+                calendar.fullCalendar('unselect');
+            },
+            events:[
+            <?php
+            $names = array('諸見里 一道[未承認]','小西 裕介[承認]','小嶋 肇[未承認]');
+
+            $i = 0;
+            foreach ($group['Schedule'] as $key => $value) {
+                $startDatetime = split(' ',$value['start_datetime']);
+                $endDatetime = split(' ',$value['end_datetime']);
+                $day = $startDatetime[0];
+                $time = $startDatetime[1].'〜'.$endDatetime[1];
+                $daySplit = split('-',$day);
+                echo '{';
+                echo "title:'".$names[$i]."',";
+                echo "start:new Date(y ,m ,".$daySplit[2].')';
+                echo '},';
+                $i++;
+            }
+            ?>
+            ]
+        });
+
+
+        function __date2string(date) {
+            var YYYY = date.getYear();
+            if (YYYY < 2000) {
+                YYYY += 1900;
+            }
+            var MM = date.getMonth() + 1;
+            if (MM < 10) {
+                MM = "0" + MM;
+            }
+            var DD = date.getDate();
+            if (DD < 10) {
+                DD = "0" + DD;
+            }
+            var tgtDate = YYYY + "-" + MM + "-" + DD;
+            return tgtDate;
+        }
+
+    });
+</script>
+    <style>
+.navbar-inverse .navbar-inner {
+background-color: #1b1b1b;
+background-image: -moz-linear-gradient(top,#ffffff,#f8f8ff);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#f8f8ff));
+background-image: -webkit-linear-gradient(top,#ffffff,#f8f8ff);
+background-image: -o-linear-gradient(top,#ffffff,#f8f8ff);
+background-image: linear-gradient(to bottom,#ffffff,#f8f8ff);
+background-repeat: repeat-x;
+border-color: #f8f8ff;
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff111111',GradientType=0);
+}
+</style>
+</head>
+
+
+
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><img src="/img/header_logo.png" alt=""></a>
+
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row-fluid">
+
+        <h2>株式会社SWTokyo 承認ページ</h2>
+        <blockquote>
+            面接可能な日程を承認してください。
+        </blockquote>
+
+    </div>
+
+        <div id="calendar-row" class="row-fluid">
+
+        <div id="calendar-area">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row-fluid">
+
+        <a class="btn btn-large btn-success submit-btn" href="/schedule_post.html#">
+            <i class="icon-ok icon-white"></i> 確定
+        </a>
+
+        <a class="btn btn-large btn-danger submit-btn" href="/schedule_post.html#">
+            <i class="icon-remove icon-white"></i> 元の画面に戻る
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div id="edit-modal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="modal-Label">2013-01-27の候補日程を追加</h3>
+    </div>
+
+        <div id="modal-alart-area" class=""></div>
+    <div class="modal-footer">
+        <button id="confirm-modal-btn" class="btn btn-success">
+            <i class="icon-ok icon-white"></i> 承認
+        </button>
+        <button id="delete-modal-btn" style="display:none" class="btn btn-danger">
+            <i class="icon-remove icon-white"></i> 削除
+        </button>
+    </div>
+</div>
+
+
+
+</body></html>

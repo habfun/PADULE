@@ -1,17 +1,18 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * User Model
+ * JobSeeker Model
  *
+ * @property Lock $Lock
  */
-class User extends AppModel {
+class JobSeeker extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'Users';
+	public $useTable = 'JobSeekers';
 
 /**
  * Validation rules
@@ -29,7 +30,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'password' => array(
+		'mail' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -40,4 +41,28 @@ class User extends AppModel {
 			),
 		),
 	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Lock' => array(
+			'className' => 'Lock',
+			'foreignKey' => 'job_seeker_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

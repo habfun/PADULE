@@ -1,16 +1,16 @@
 <?php
 /**
- * UserFixture
+ * LockFixture
  *
  */
-class UserFixture extends CakeTestFixture {
+class LockFixture extends CakeTestFixture {
 
 /**
  * Table name
  *
  * @var string
  */
-	public $table = 'Users';
+	public $table = 'Locks';
 
 /**
  * Fields
@@ -19,8 +19,9 @@ class UserFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
-		'username' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'password' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'schedule_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
+		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
+		'lock_type' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 4),
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'indexes' => array(
@@ -37,10 +38,11 @@ class UserFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'username' => 'Lorem ipsum dolor sit amet',
-			'password' => 'Lorem ipsum dolor sit amet',
-			'created' => '2013-02-09 10:11:07',
-			'modified' => '2013-02-09 10:11:07'
+			'schedule_id' => 1,
+			'job_seeker_id' => 1,
+			'lock_type' => 1,
+			'created' => '2013-02-09 13:27:59',
+			'modified' => '2013-02-09 13:27:59'
 		),
 	);
 

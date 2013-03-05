@@ -32,4 +32,12 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+    var $components = array('Session');
+
+    function beforeFilter() {
+        $this->autoLayout = false;
+        $this->login = $this->Session->read('login');
+        $this->set('login',$this->login);
+    }
 }
