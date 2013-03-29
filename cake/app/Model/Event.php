@@ -1,19 +1,20 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Group Model
+ * Event Model
  *
  * @property User $User
+ * @property JobSeeker $JobSeeker
  * @property Schedule $Schedule
  */
-class Group extends AppModel {
+class Event extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'Groups';
+	public $useTable = 'Events';
 
 /**
  * Display field
@@ -28,9 +29,9 @@ class Group extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'title' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
+		'user_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -38,9 +39,9 @@ class Group extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'user_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+		'title' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -73,9 +74,9 @@ class Group extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Schedule' => array(
-			'className' => 'Schedule',
-			'foreignKey' => 'group_id',
+		'JobSeeker' => array(
+			'className' => 'JobSeeker',
+			'foreignKey' => 'event_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -86,9 +87,9 @@ class Group extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'JobSeeker' => array(
-			'className' => 'JobSeeker',
-			'foreignKey' => 'group_id',
+		'Schedule' => array(
+			'className' => 'Schedule',
+			'foreignKey' => 'event_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',

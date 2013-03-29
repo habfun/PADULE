@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class LocksController extends AppController {
 
-    var $uses = array('Lock','Group','User','JobSeeker','Schedule');
+    var $uses = array('Lock','User','JobSeeker','Schedule');
 
 /**
  * index method

@@ -31,6 +31,7 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController {
 
+
 /**
  * Controller name
  *
@@ -43,7 +44,8 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('User','Group');
+
 
 /**
  * Displays a view
@@ -72,4 +74,5 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
 	}
+
 }

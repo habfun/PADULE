@@ -33,11 +33,24 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $components = array('Session');
+    var $components = array(
+        'Session',
+        'Auth' => Array(
+            'loginRedirect' => Array('controller'  => 'events', 'action' => 'padule'),
+            'logoutRedirect' => Array('controller' => 'users', 'action' => 'login'),
+            'loginAction' => Array('controller' => 'users', 'action' => 'login'),
+            'authError' => 'Did you really think you are allowed to see that?',
+            'authenticate' => array(
+                'Form' => array(
+                    'userModel' => 'User',
+                )
+            )
+        ),
+        'RequestHandler'
+    );
 
     function beforeFilter() {
         $this->autoLayout = false;
-        $this->login = $this->Session->read('login');
-        $this->set('login',$this->login);
+        $this->Auth->allow();
     }
 }

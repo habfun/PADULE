@@ -18,14 +18,17 @@ class ScheduleFixture extends CakeTestFixture {
  * @var array
  */
 	public $fields = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
-		'group_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
-		'start_datetime' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'end_datetime' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
+		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'event_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'start_datetime' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'end_datetime' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1)
+			'PRIMARY' => array('column' => array('id', 'job_seeker_id'), 'unique' => 1),
+			'fk_Schedules_Events1_idx' => array('column' => 'event_id', 'unique' => 0),
+			'fk_Schedules_JobSeekers1_idx' => array('column' => 'job_seeker_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
@@ -38,11 +41,12 @@ class ScheduleFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'group_id' => 1,
-			'start_datetime' => '2013-02-09 13:28:30',
-			'end_datetime' => '2013-02-09 13:28:30',
-			'created' => '2013-02-09 13:28:30',
-			'modified' => '2013-02-09 13:28:30'
+			'event_id' => 1,
+			'job_seeker_id' => 1,
+			'start_datetime' => '2013-03-11 23:53:32',
+			'end_datetime' => '2013-03-11 23:53:32',
+			'created' => '2013-03-11 23:53:32',
+			'modified' => '2013-03-11 23:53:32'
 		),
 	);
 

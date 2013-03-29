@@ -228,8 +228,8 @@ height:30%;
     <div class="row-fluid">
         <div>
         <?php
-            echo $this->Form->input('Group.title',array('label' => 'タイトル','value'=>'◯◯面接'));
-            echo $this->Form->input('Group.text',array('label' => '詳細','value' => 'この度は、弊社にご応募いただき、誠にありがとうございました。
+            echo $this->Form->input('Event.title',array('label' => 'タイトル','value'=>'◯◯面接'));
+            echo $this->Form->input('Event.text',array('label' => '詳細','value' => 'この度は、弊社にご応募いただき、誠にありがとうございました。
 是非一度ご面接の機会を設けさせていただきたく存じ上げます。つきましては、面接内容をご確認のうえ、ご都合の良い日時にご予約いただけますようよろしくお願い致します。
 
 【内容】○○との個人面接　60分

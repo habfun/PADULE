@@ -18,14 +18,16 @@ class LockFixture extends CakeTestFixture {
  * @var array
  */
 	public $fields = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
-		'schedule_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
-		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
-		'lock_type' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 4),
-		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
+		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'schedule_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'type' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 4),
+		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1)
+			'PRIMARY' => array('column' => array('id', 'job_seeker_id', 'schedule_id'), 'unique' => 1),
+			'fk_Locks_JobSeekers1_idx' => array('column' => 'job_seeker_id', 'unique' => 0),
+			'fk_Locks_Schedules1_idx' => array('column' => 'schedule_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
@@ -38,11 +40,11 @@ class LockFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'schedule_id' => 1,
 			'job_seeker_id' => 1,
-			'lock_type' => 1,
-			'created' => '2013-02-09 13:27:59',
-			'modified' => '2013-02-09 13:27:59'
+			'schedule_id' => 1,
+			'type' => 1,
+			'created' => '2013-03-11 23:52:25',
+			'modified' => '2013-03-11 23:52:25'
 		),
 	);
 

@@ -18,3 +18,45 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 [main] - APP/webroot/index.php, line 92
 
+2013-03-11 16:01:27 Notice: Notice (8): Indirect modification of overloaded property UsersController::$Auth has no effect in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/AppController.php, line 40]
+Trace:
+AppController::beforeFilter() - APP/Controller/AppController.php, line 40
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 246
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2013-03-11 16:01:27 Notice: Notice (8): Undefined variable: login in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/login.ctp, line 305]
+Trace:
+include - APP/View/Users/login.ctp, line 305
+View::_evaluate() - CORE/Cake/View/View.php, line 923
+View::_render() - CORE/Cake/View/View.php, line 886
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 956
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2013-03-11 16:03:46 Notice: Notice (8): Indirect modification of overloaded property UsersController::$Auth has no effect in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/AppController.php, line 40]
+Trace:
+AppController::beforeFilter() - APP/Controller/AppController.php, line 40
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 246
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2013-03-11 16:03:46 Notice: Notice (8): Undefined variable: login in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/login.ctp, line 305]
+Trace:
+include - APP/View/Users/login.ctp, line 305
+View::_evaluate() - CORE/Cake/View/View.php, line 923
+View::_render() - CORE/Cake/View/View.php, line 886
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 956
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+

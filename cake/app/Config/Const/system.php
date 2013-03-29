@@ -6,4 +6,6 @@ if(env('HTTP_HOST') == 'www.padule.me' || env('HTTP_HOST') == 'padule.me') {
 } else {
     define('DB_USER', 'mokyu');
     define('DB_PASSWORD', '');
+    Configure::write('debug', 2);
+
 }

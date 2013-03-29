@@ -8,9 +8,10 @@ class AppSchema extends CakeSchema {
 	public function after($event = array()) {
 	}
 
-	public $Categories = array(
+	public $Companys = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'name' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 32, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'name' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'enabled' => array('type' => 'boolean', 'null' => true, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
@@ -18,105 +19,74 @@ class AppSchema extends CakeSchema {
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
-	public $Contents = array(
+	public $Events = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'category_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'user_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'title' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'image_url' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'text' => array('type' => 'text', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'url' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 32, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'enabled' => array('type' => 'boolean', 'null' => true, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'fk_Contents_Categorys1_idx' => array('column' => 'category_id', 'unique' => 0)
+			'PRIMARY' => array('column' => array('id', 'user_id'), 'unique' => 1),
+			'fk_Events_Users1_idx' => array('column' => 'user_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
-	public $ContentsStamps = array(
+	public $JobSeekers = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'content_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'stamp_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'count' => array('type' => 'integer', 'null' => true, 'default' => null),
-		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'fk_ContentsStamps_Contents1_idx' => array('column' => 'content_id', 'unique' => 0),
-			'fk_ContentsStamps_Stamps1_idx' => array('column' => 'stamp_id', 'unique' => 0)
-		),
-		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
-	);
-	public $FeelingTypes = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'name' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 32, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'comment' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 64, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1)
-		),
-		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
-	);
-	public $Ratings = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'content_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'good' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '??????'),
-		'bad' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '????????'),
-		'laugh' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '????'),
-		'scare' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '?????'),
-		'throb' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '?????'),
-		'sad' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '??????'),
-		'excite' => array('type' => 'integer', 'null' => true, 'default' => null, 'comment' => '?????'),
-		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
-		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
-		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'fk_Ratings_Contents1_idx' => array('column' => 'content_id', 'unique' => 0)
-		),
-		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
-	);
-	public $Reviews = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'user_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'content_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'event_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'username' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'mail' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'comment' => array('type' => 'text', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
-		'enabled' => array('type' => 'boolean', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'id_UNIQUE' => array('column' => 'id', 'unique' => 1),
-			'fk_Reviews_Users_idx' => array('column' => 'user_id', 'unique' => 0),
-			'fk_Reviews_Contents1_idx' => array('column' => 'content_id', 'unique' => 0)
+			'fk_JobSeekers_Events1_idx' => array('column' => 'event_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
-	public $ReviewsStamps = array(
+	public $Locks = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'review_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'stamp_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'fk_ReviewStanps_Reviews1_idx' => array('column' => 'review_id', 'unique' => 0),
-			'fk_ReviewStanps_Stamps1_idx' => array('column' => 'stamp_id', 'unique' => 0)
-		),
-		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
-	);
-	public $Stamps = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'feeling_type_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
-		'enabled' => array('type' => 'boolean', 'null' => true, 'default' => null),
+		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'schedule_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'type' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 4),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'fk_Stamps_FeelingTypes1_idx' => array('column' => 'feeling_type_id', 'unique' => 0)
+			'PRIMARY' => array('column' => array('id', 'job_seeker_id', 'schedule_id'), 'unique' => 1),
+			'fk_Locks_JobSeekers1_idx' => array('column' => 'job_seeker_id', 'unique' => 0),
+			'fk_Locks_Schedules1_idx' => array('column' => 'schedule_id', 'unique' => 0)
+		),
+		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
+	);
+	public $Schedules = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'event_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'job_seeker_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'start_datetime' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'end_datetime' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'indexes' => array(
+			'PRIMARY' => array('column' => array('id', 'job_seeker_id'), 'unique' => 1),
+			'fk_Schedules_Events1_idx' => array('column' => 'event_id', 'unique' => 0),
+			'fk_Schedules_JobSeekers1_idx' => array('column' => 'job_seeker_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
 	public $Users = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'facebook_id' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'access_token' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 256, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'username' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'password' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
+		'company_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
 		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1)
+			'PRIMARY' => array('column' => 'id', 'unique' => 1),
+			'fk_Users_Companys_idx' => array('column' => 'company_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

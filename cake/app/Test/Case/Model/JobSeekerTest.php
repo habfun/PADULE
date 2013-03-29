@@ -14,7 +14,10 @@ class JobSeekerTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.job_seeker',
-		'app.lock'
+		'app.lock',
+		'app.schedule',
+		'app.group',
+		'app.user'
 	);
 
 /**

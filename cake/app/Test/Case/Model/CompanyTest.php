@@ -1,11 +1,11 @@
 <?php
-App::uses('Lock', 'Model');
+App::uses('Company', 'Model');
 
 /**
- * Lock Test Case
+ * Company Test Case
  *
  */
-class LockTest extends CakeTestCase {
+class CompanyTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,11 +13,8 @@ class LockTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.lock',
-		'app.schedule',
-		'app.group',
-		'app.user',
-		'app.job_seeker'
+		'app.company',
+		'app.user'
 	);
 
 /**
@@ -27,7 +24,7 @@ class LockTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Lock = ClassRegistry::init('Lock');
+		$this->Company = ClassRegistry::init('Company');
 	}
 
 /**
@@ -36,7 +33,7 @@ class LockTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Lock);
+		unset($this->Company);
 
 		parent::tearDown();
 	}

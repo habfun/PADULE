@@ -302,19 +302,14 @@ padding: 7px 9px;
 <body>
 <!-- /.carousel -->
 <div class="container">
-<?php if ($login) { ?>
-<center><a class="btn btn-large btn-primary" href="/schedules/">スケジュールの調整をする</a></center>
-<?php }else{ ?>
-        <form class="form-signin" action="/users/login" id="UserAddForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+        <?php echo $this->Form->create(array('class' => 'form-signin')) ?>
             <h3>PADULE ログイン</h3>
             <p>メールアドレスとパスワードを入力してください。</p>
-        <input type="text" name="data[User][username]" class="input-block-level" placeholder="メールアドレスを入力してください。" label="">
-        <input type="password" name="data[User][password]" class="input-block-level" placeholder="パスワードを入力してください。" label="">
-
+        <?php echo $this->Form->input('User.username',array('class' => 'input-block-level','placeholder' => 'メールアドレスを入力してください。','label' => '')) ?>
+        <?php echo $this->Form->input('User.password',array('class' => 'input-block-level','placeholder' => 'パスワードを入力してください。','label' => '')) ?>
         <button class="btn btn-large btn-primary" type="submit">ログインする</button>
 
       </form>
-<?php } ?>
     </div> <!-- /container -->
 
 <!-- Marketing messaging and featurettes
@@ -334,4 +329,6 @@ padding: 7px 9px;
 
 
 
-</body></html>
+</body>
+    <?php echo $this->element('sql_dump'); ?>
+</html>

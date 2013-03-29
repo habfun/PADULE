@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Lock Model
  *
- * @property Schedule $Schedule
  * @property JobSeeker $JobSeeker
+ * @property Schedule $Schedule
  */
 class Lock extends AppModel {
 
@@ -21,7 +21,7 @@ class Lock extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'schedule_id' => array(
+		'job_seeker_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -31,7 +31,7 @@ class Lock extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'job_seeker_id' => array(
+		'schedule_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -51,16 +51,16 @@ class Lock extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Schedule' => array(
-			'className' => 'Schedule',
-			'foreignKey' => 'schedule_id',
+		'JobSeeker' => array(
+			'className' => 'JobSeeker',
+			'foreignKey' => 'job_seeker_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'JobSeeker' => array(
-			'className' => 'JobSeeker',
-			'foreignKey' => 'job_seeker_id',
+		'Schedule' => array(
+			'className' => 'Schedule',
+			'foreignKey' => 'schedule_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

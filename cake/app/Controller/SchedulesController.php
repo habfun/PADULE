@@ -7,7 +7,11 @@ App::uses('AppController', 'Controller');
  */
 class SchedulesController extends AppController {
 
-var $uses = array('Schedule','Lock','Group','User','JobSeeker');
+var $uses = array('Schedule','Lock','Event','User','JobSeeker');
+ public function beforeFilter() {
+        $this->Auth->allowedActions = array();
+        parent::beforeFilter();
+    }
 
 /**
  * index method
@@ -15,10 +19,8 @@ var $uses = array('Schedule','Lock','Group','User','JobSeeker');
  * @return void
  */
 	public function index() {
-		if(empty($this->login)) {
-			$this->redirect('/');
-		}
-		$group = $this->Group->find('all',array('conditions' => array('Group.user_id' => $this->login),'order' => 'Group.id desc'));
+
+		$group = $this->Event->find('all',array('conditions' => array('Event.user_id' => $this->Auth->user('id')),'order' => 'Event.id desc'));
 
 		$this->set('group',$group);
 	}
@@ -60,9 +62,6 @@ $times = array();
  * @return void
  */
 	public function add() {
-		if(empty($this->login)) {
-			$this->redirect('/');
-		}
 		if ($this->request->is('post')) {
 			pr($this->data);
 			exit;
@@ -75,15 +74,13 @@ $times = array();
 		$groups = $this->Schedule->Group->find('list');
 		$this->set(compact('groups'));
 	}
-	public function newpadule() {
-		if(empty($this->login)) {
-			$this->redirect('/');
-		}
-		if ($this->request->is('post')) {
-			$this->request->data['Group']['user_id'] = $this->login;
 
-			if($this->Group->save($this->request->data['Group'])) {
-				$groupId = $this->Group->getLastInsertId();
+	public function newpadule() {
+		if ($this->request->is('post')) {
+			$this->request->data['Event']['user_id'] = $this->Auth->user('id');
+
+			if($this->Event->save($this->request->data['Event'])) {
+				$eventId = $this->Event->getLastInsertId();
 				foreach ($this->request->data['dates'] as $key => $value) {
 					if(!empty($value)) {
 						$this->Schedule->create();
@@ -91,7 +88,7 @@ $times = array();
 						$startDate = $tmpDate[0];
 						$endDate = $tmpDate[1];
 						$saveData = array(
-							'group_id' => $groupId,
+							'event_id' => $eventId,
 							'start_datetime' => $startDate,
 							'end_datetime' => $endDate,
 						);
@@ -99,7 +96,7 @@ $times = array();
 					}
 				}
 
-				$this->redirect(array('controller' => 'schedules','action' => 'complete','0' => $groupId));
+				$this->redirect(array('controller' => 'schedules','action' => 'complete','0' => $eventId));
 			}
 		}
 	}

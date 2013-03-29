@@ -3,7 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Schedule Model
  *
- * @property Group $Group
+ * @property Event $Event
+ * @property JobSeeker $JobSeeker
  * @property Lock $Lock
  */
 class Schedule extends AppModel {
@@ -21,7 +22,7 @@ class Schedule extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'group_id' => array(
+		'event_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -31,19 +32,9 @@ class Schedule extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'start_datetime' => array(
-			'datetime' => array(
-				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'end_datetime' => array(
-			'datetime' => array(
-				'rule' => array('datetime'),
+		'job_seeker_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -61,9 +52,16 @@ class Schedule extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Group' => array(
-			'className' => 'Group',
-			'foreignKey' => 'group_id',
+		'Event' => array(
+			'className' => 'Event',
+			'foreignKey' => 'event_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'JobSeeker' => array(
+			'className' => 'JobSeeker',
+			'foreignKey' => 'job_seeker_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -75,7 +73,6 @@ class Schedule extends AppModel {
  *
  * @var array
  */
-/*
 	public $hasMany = array(
 		'Lock' => array(
 			'className' => 'Lock',
@@ -91,5 +88,5 @@ class Schedule extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-*/
+
 }
