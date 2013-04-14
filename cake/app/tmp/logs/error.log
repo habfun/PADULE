@@ -2518,3 +2518,941 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-03-30 03:40:52 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_view.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:40:58 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_index.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:41:21 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Events/padule.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:41:26 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Events/padule.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:41:36 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_index.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:50:37 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/UsersController.php, line 93]
+2013-03-30 03:50:37 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 93)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 93, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 93, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 03:50:56 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_index.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:51:22 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_index.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:55:28 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_index.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 03:55:42 Error: Fatal Error (4): syntax error, unexpected ''User));' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_index.ctp, line 3]
+2013-03-30 03:55:42 Error: [FatalErrorException] syntax error, unexpected ''User));' (T_ENCAPSED_AND_WHITESPACE), expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 03:58:45 Error: Fatal Error (4): syntax error, unexpected ''User));' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_index.ctp, line 3]
+2013-03-30 03:58:45 Error: [FatalErrorException] syntax error, unexpected ''User));' (T_ENCAPSED_AND_WHITESPACE), expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 03:59:06 Error: Fatal Error (4): syntax error, unexpected ''user));' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_index.ctp, line 3]
+2013-03-30 03:59:06 Error: [FatalErrorException] syntax error, unexpected ''user));' (T_ENCAPSED_AND_WHITESPACE), expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 3, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 13:12:35 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_view.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 13:13:47 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Events/padule.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 13:48:05 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php, line 78]
+2013-03-30 13:48:05 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 13:48:10 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php, line 78]
+2013-03-30 13:48:10 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 13:49:42 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php, line 78]
+2013-03-30 13:49:42 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 78, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 13:50:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php, line 81]
+2013-03-30 13:50:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 81, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 81, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 13:50:24 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php, line 81]
+2013-03-30 13:50:24 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 81, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 81, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 14:15:31 Error: [MissingControllerException] Controller class ApilocksController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-30 14:15:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`padule`.`JobSeekers`, CONSTRAINT `fk_JobSeekers_Events1` FOREIGN KEY (`event_id`) REFERENCES `Events` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('INSERT INTO `pa...', Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `pa...')
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1734): DboSource->create(Object(JobSeeker), Array, Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php(42): Model->save(NULL)
+#5 [internal function]: LocksController->api_add('1')
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LocksController), Array)
+#7 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-30 14:16:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`padule`.`JobSeekers`, CONSTRAINT `fk_JobSeekers_Events1` FOREIGN KEY (`event_id`) REFERENCES `Events` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('INSERT INTO `pa...', Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `pa...')
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1734): DboSource->create(Object(JobSeeker), Array, Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php(42): Model->save(NULL)
+#5 [internal function]: LocksController->api_add('1')
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LocksController), Array)
+#7 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-30 14:24:54 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Locks/add.ctp, line 64]
+2013-03-30 14:24:54 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 64, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 64, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-30 14:27:27 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Locks/api_add.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 14:30:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`padule`.`JobSeekers`, CONSTRAINT `fk_JobSeekers_Events1` FOREIGN KEY (`event_id`) REFERENCES `Events` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('INSERT INTO `pa...', Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `pa...')
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1734): DboSource->create(Object(JobSeeker), Array, Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php(42): Model->save(NULL)
+#5 [internal function]: LocksController->api_add('1')
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LocksController), Array)
+#7 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-30 14:30:09 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Locks/api_add.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-30 14:31:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`padule`.`JobSeekers`, CONSTRAINT `fk_JobSeekers_Events1` FOREIGN KEY (`event_id`) REFERENCES `Events` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('INSERT INTO `pa...', Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `pa...')
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1734): DboSource->create(Object(JobSeeker), Array, Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/LocksController.php(42): Model->save(NULL)
+#5 [internal function]: LocksController->api_add()
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LocksController), Array)
+#7 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LocksController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-31 05:41:34 Error: [MissingTableException] Table TmpUsers for model TmpUser was not found in datasource default.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(3186): Model->setSource('TmpUsers')
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1305): Model->getDataSource()
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Model/Model.php(1480): Model->schema()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/UsersController.php(105): Model->create()
+#4 [internal function]: UsersController->regist()
+#5 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-31 05:59:21 Error: Fatal Error (1): Call to a member function viewVars() on a non-object in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/UsersController.php, line 110]
+2013-03-31 05:59:21 Error: [FatalErrorException] Call to a member function viewVars() on a non-object
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/k.moromi...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/k.moromi...', 110, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/k.moromi...', 110, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-31 05:59:43 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/regist.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:30:53 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:31:23 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:32:57 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:34:19 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:34:38 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 09:36:33 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Users/json/api_login.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/JsonView.php(98): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): JsonView->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 13:56:02 Error: [MissingViewException] View file "/Users/k.moromizato/Documents/workspace/PADULE/cake/app/View/Events/padule.ctp" is missing.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-31 13:57:35 Error: [MissingActionException] Action UsersController::api_regist() could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 09:59:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 09:59:27 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 09:59:27 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:56 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:28:56 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:28:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:28:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:29:00 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:29:00 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:29:00 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:29:00 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:29:00 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:29:00 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:29:00 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:29:00 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:46:15 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:15 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:15 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:15 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:15 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:15 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:46:15 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:46:15 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:02 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:02 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:04 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:04 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:04 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:07 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:07 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:09 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:09 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 10:47:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 10:47:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 10:47:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 13:15:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:15:12 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 13:15:12 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 13:16:49 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:16:49 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 13:16:49 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 13:17:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 13:17:13 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/CakeRequest.php, line 600]
+2013-04-07 13:17:13 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/Users/k.moromi...', 600)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/Users/k.moromi...', 600, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 13:38:20 Error: [MissingActionException] Action UsersController::resist() could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-07 13:38:50 Error: [MissingActionException] Action UsersController::resist() could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-07 14:23:30 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:23:30 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:31:35 Error: [SocketException] Invalid email: ""
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/Email/CakeEmail.php(427): CakeEmail->_setEmail('_to', '', NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/UsersController.php(149): CakeEmail->to('')
+#2 [internal function]: UsersController->regist()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-04-07 14:32:23 Error: [SocketException] Invalid email: ""
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Network/Email/CakeEmail.php(427): CakeEmail->_setEmail('_to', '', NULL)
+#1 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/UsersController.php(149): CakeEmail->to('')
+#2 [internal function]: UsersController->regist()
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-04-07 14:34:09 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 14:40:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:40:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:40:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:40:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:40:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:40:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:40:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:40:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:40:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:40:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:42:13 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:42:13 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:42:13 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:42:13 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:44:38 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:44:38 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:45:55 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:45:55 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:46:19 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:46:19 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 14:47:39 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-07 14:47:39 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-12 14:46:27 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-12 14:46:27 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-12 14:46:33 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-12 14:46:33 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-12 14:46:46 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-12 14:46:46 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-12 14:46:58 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/k.moromizato/Documents/workspace/PADULE/cake/app/Controller/EventsController.php, line 142]
+2013-04-12 14:46:58 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/k.moromi...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#2 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/k.moromi...', 142, Array)
+#3 /Users/k.moromizato/Documents/workspace/PADULE/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

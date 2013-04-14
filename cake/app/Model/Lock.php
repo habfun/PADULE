@@ -50,6 +50,7 @@ class Lock extends AppModel {
  *
  * @var array
  */
+/*
 	public $belongsTo = array(
 		'JobSeeker' => array(
 			'className' => 'JobSeeker',
@@ -66,4 +67,5 @@ class Lock extends AppModel {
 			'order' => ''
 		)
 	);
+*/
 }

@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class LocksController extends AppController {
 
-    var $uses = array('Lock','User','JobSeeker','Schedule');
+    var $uses = array('Lock','User','Event','JobSeeker','Schedule');
 
 /**
  * index method
@@ -34,15 +34,44 @@ class LocksController extends AppController {
 		$this->set('lock', $this->Lock->read(null, $id));
 	}
 
+	public function api_add() {
+		//pr($this->data);
+		$error = null;
+		$this->JobSeeker->begin();
+		$success = true;
+		if(!$this->JobSeeker->save($this->request->data['JobSeeker'])) {
+			$success = false;
+		}
+		if($success) {
+			$JobSeekerId = $this->JobSeeker->getLastInsertId();
+			foreach ($this->request->data['Lock'] as $key => $value) {
+				$value['job_seeker_id'] = $JobSeekerId;
+				$this->Lock->create();
+				if (!$this->Lock->save($value)) {
+					$success = false;
+				}
+			}
+		}
+
+		if($success) {
+			$this->JobSeeker->commit();
+ 			$env['success'] = true;
+		} else {
+			$this->JobSeeker->rollback();
+			$env['success'] = false;
+		}
+
+		$this->set(compact('env'));
+	}
 /**
  * add method
  *
  * @return void
  */
-	public function add($group_id = null) {
+	public function add($eventId = null) {
 		$this->autoLayout = false;
 
-		if($group_id == null) {
+		if($eventId == null) {
 			$this->redirect('/');
 		}
 		if ($this->request->is('post')) {
@@ -63,7 +92,6 @@ class LocksController extends AppController {
 				$this->autoLayout = true;
 				$this->flash(__('登録を受け付けました。'), array('controller' => 'pages','action' => 'index'));
 			}
-		} {
 		}
 		//グループ、スケジュールを取得
 		/*
@@ -75,12 +103,30 @@ class LocksController extends AppController {
 			'recursive' => 3
 		);
 		*/
-		$group = $this->Group->findById($group_id);
+		$this->Event->bindModel(
+            array(
+                'hasMany' => array(
+                    'Schedule' => array(
+                        'className' => 'Schedule',
+                        'foreignKey' => 'event_id',
+                        'dependent' => false,
+                        'conditions' => '',
+                        'fields' => '',
+                        'order' => '',
+                        'limit' => '',
+                        'offset' => '',
+                        'exclusive' => '',
+                        'finderQuery' => '',
+                        'counterQuery' => ''
+                    )
+                )
+            )
+        );
+		$group = $this->Event->findById($eventId);
 		//pr($group);
 
-		$schedules = $this->Lock->Schedule->find('list');
-		$jobSeekers = $this->Lock->JobSeeker->find('list');
-		$this->set(compact('schedules', 'jobSeekers','group'));
+		$schedules = $this->Schedule->find('list');
+		$this->set(compact('group'));
 	}
 
 /**

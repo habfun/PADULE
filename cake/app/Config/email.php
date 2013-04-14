@@ -43,7 +43,7 @@
 class EmailConfig {
 
 	public $default = array(
-		'transport' => 'Mail',
+		'transport' => 'Smtp',
 		'from' => 'padule@padule.me',
 		'charset' => 'utf-8',
 		'headerCharset' => 'utf-8',
@@ -64,16 +64,16 @@ class EmailConfig {
 	);
 
 	public $fast = array(
-		'from' => 'you@localhost',
+		'from' => 'padule@padule.me',
 		'sender' => null,
 		'to' => null,
 		'cc' => null,
-		'bcc' => null,
-		'replyTo' => null,
+		'bcc' => 'padule@outlook.com',
+		'replyTo' => 'padule@outlook.com',
 		'readReceipt' => null,
 		'returnPath' => null,
 		'messageId' => true,
-		'subject' => null,
+		'subject' => 'PADULE 仮登録完了メール',
 		'message' => null,
 		'headers' => null,
 		'viewRender' => null,
@@ -94,4 +94,27 @@ class EmailConfig {
 		//'headerCharset' => 'utf-8',
 	);
 
+	public $regist = array(
+		'from' => 'padule@padule.me',
+		'sender' => null,
+		'to' => null,
+		'cc' => null,
+		'bcc' => 'padule@outlook.com',
+		'replyTo' => 'padule@outlook.com',
+		'subject' => '【アカウント発行のお知らせ】Padule事務局',
+		'sendAs' => 'text',
+		'template' => 'regist',
+	);
+
+	public $complete = array(
+		'from' => 'padule@padule.me',
+		'sender' => null,
+		'to' => null,
+		'cc' => null,
+		'bcc' => 'padule@outlook.com',
+		'replyTo' => 'padule@outlook.com',
+		'subject' => 'メール文⑸　【面接日程が調整されました】Padule事務局',
+		'sendAs' => 'text',
+		'template' => 'regist',
+	);
 }

@@ -51,6 +51,7 @@ class Schedule extends AppModel {
  *
  * @var array
  */
+/*
 	public $belongsTo = array(
 		'Event' => array(
 			'className' => 'Event',
@@ -67,12 +68,13 @@ class Schedule extends AppModel {
 			'order' => ''
 		)
 	);
-
+*/
 /**
  * hasMany associations
  *
  * @var array
  */
+/*
 	public $hasMany = array(
 		'Lock' => array(
 			'className' => 'Lock',
@@ -88,5 +90,5 @@ class Schedule extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-
+*/
 }

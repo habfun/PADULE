@@ -50,9 +50,9 @@ height:30%;
 
     <div class="row-fluid">
 
-        <h2><?php echo $group['Group']['title'];?></h2>
+        <h2><?php echo $group['Event']['title'];?></h2>
         <blockquote>
-            <?php echo nl2br($group['Group']['text']);?>
+            <?php echo nl2br($group['Event']['text']);?>
         </blockquote>
 
         <blockquote>
@@ -61,8 +61,7 @@ height:30%;
 
     </div>
 
-<?php echo $this->Form->create('Lock'); ?>
-    <div class="row-fluid">
+<form action="/api/locks/add.json" id="LockAddForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>     <div class="row-fluid">
         <div>
        	<?php
 			echo $this->Form->input('JobSeeker.username',array('label' => '名前'));
@@ -85,7 +84,6 @@ height:30%;
             <?php
             $i = 0;
 	foreach ($group['Schedule'] as $key => $value) {
-		if(!$value['complete']) {
             $startSplit = split(' ', $value['start_datetime']);
             $endSplit = split(' ', $value['end_datetime']);
 			echo $this->Form->hidden('Lock.'.$i.'.schedule_id',array('value' => $value['id']));
@@ -93,17 +91,16 @@ height:30%;
             <tr>
             	<td><?php echo $startSplit[0].'<br />'.$startSplit[1].'〜'.$endSplit[1];?></td>
                 <td>
-                    <?php echo $this->Form->input('Lock.'.$i.'.lock_type',array('label' => false,'options' => array(0 => '◯',1 => '△', 2 => '☓')));?>
+                    <?php echo $this->Form->input('Lock.'.$i.'.type',array('label' => false,'options' => array(1 => '◯',0 => '☓')));?>
                 </td>
             </tr>
             <?php
             $i++;
-		}
 	}
 	?>
         </table>
         <?php echo $this->Form->input('JobSeeker.comment',array('label' => 'メッセージ')); ?>
-        <?php echo $this->Form->hidden('JobSeeker.group_id',array('value' => $group['Group']['id'])); ?>
+        <?php echo $this->Form->hidden('JobSeeker.event_id',array('value' => $group['Event']['id'])); ?>
 
     </div>
 

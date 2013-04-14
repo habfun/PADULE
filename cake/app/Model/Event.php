@@ -58,6 +58,7 @@ class Event extends AppModel {
  *
  * @var array
  */
+/*
 	public $belongsTo = array(
 		'User' => array(
 			'className' => 'User',
@@ -67,12 +68,13 @@ class Event extends AppModel {
 			'order' => ''
 		)
 	);
-
+*/
 /**
  * hasMany associations
  *
  * @var array
  */
+/*
 	public $hasMany = array(
 		'JobSeeker' => array(
 			'className' => 'JobSeeker',
@@ -101,5 +103,5 @@ class Event extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-
+*/
 }

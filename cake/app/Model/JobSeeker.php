@@ -51,6 +51,7 @@ class JobSeeker extends AppModel {
  *
  * @var array
  */
+/*
 	public $belongsTo = array(
 		'Event' => array(
 			'className' => 'Event',
@@ -60,12 +61,13 @@ class JobSeeker extends AppModel {
 			'order' => ''
 		)
 	);
-
+*/
 /**
  * hasMany associations
  *
  * @var array
  */
+/*
 	public $hasMany = array(
 		'Lock' => array(
 			'className' => 'Lock',
@@ -94,5 +96,6 @@ class JobSeeker extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+	*/
 
 }
