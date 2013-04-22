@@ -1,393 +1,96 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)https://dl.dropbox.com/u/3601859/AdjustInterview/brand.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<title>Padule - 日程調整をパズル感覚で</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Le styles -->
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/bootstrap-responsive.css" rel="stylesheet">
-<style>
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-body {
-    padding-bottom: 40px;
-    color: #5a5a5a;
-}
-
-    /* CUSTOMIZE THE NAVBAR
-   -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    margin-top: 20px;
-    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-}
-
-.navbar-wrapper .navbar {
-
-}
-
-    /* Remove border and change up box shadow for more contrast */
-.navbar .navbar-inner {
-    border: 0;
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-}
-
-    /* Downsize the brand/project name a bit */
-.navbar .brand {
-    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-    font-size: 16px;
-    font-weight: bold;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
-}
-
-    /* Navbar links: increase padding for taller navbar */
-.navbar .nav > li > a {
-    padding: 15px 20px;
-}
-
-    /* Offset the responsive button for proper vertical alignment */
-.navbar .btn-navbar {
-    margin-top: 10px;
-}
-
-    /* CUSTOMIZE THE CAROUSEL
-   -------------------------------------------------- */
-
-    /* Carousel base class */
-.carousel {
-    margin-bottom: 60px;
-}
-
-.carousel .container {
-    position: relative;
-    z-index: 9;
-}
-
-.carousel-control {
-    height: 80px;
-    margin-top: 0;
-    font-size: 120px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-    background-color: transparent;
-    border: 0;
-    z-index: 10;
-}
-
-.carousel .item {
-    height: 450px;
-}
-
-.carousel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 450px;
-}
-
-.carousel-caption {
-    background-color: transparent;
-    position: static;
-    max-width: 550px;
-    padding: 0 20px;
-    margin-top: 200px;
-}
-
-.carousel-caption h1,
-.carousel-caption .lead {
-    margin: 0;
-    line-height: 1.25;
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-}
-
-.carousel-caption .btn {
-    margin-top: 10px;
-}
-
-    /* MARKETING CONTENT
-   -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-.marketing .span4 {
-    text-align: center;
-}
-
-.marketing h2 {
-    font-weight: normal;
-}
-
-.marketing .span4 p {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-    /* Featurettes
-   ------------------------- */
-
-.featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-.featurette {
-    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-    overflow: hidden; /* Vertically center images part 2: clear their floats. */
-}
-
-.featurette-image {
-    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-    margin-right: 40px;
-}
-
-.featurette-image.pull-right {
-    margin-left: 40px;
-}
-
-    /* Thin out the marketing headings */
-.featurette-heading {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-    /* RESPONSIVE CSS
-   -------------------------------------------------- */
-
-@media (max-width: 950px) {
-
-    .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-    }
-
-    .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-    }
-
-    .carousel .item {
-        height: 475px;
-    }
-
-    .carousel img {
-        width: auto;
-        height: 475px;
-    }
-
-    .featurette {
-        height: auto;
-        padding: 0;
-    }
-
-    .featurette-image.pull-left,
-    .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .navbar-inner {
-        margin: -20px;
-    }
-
-    .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
-
-    .carousel .container {
-
-    }
-
-    .carousel .item {
-        height: 300px;
-    }
-
-    .carousel img {
-        height: 300px;
-    }
-
-    .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 30px;
-    }
-
-    .carousel-caption .lead,
-    .carousel-caption .btn {
-        font-size: 18px;
-    }
-
-    .marketing .span4 + .span4 {
-        margin-top: 40px;
-    }
-
-    .featurette-heading {
-        font-size: 30px;
-    }
-
-    .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-}
-.form-signin {
-max-width: 300px;
-padding: 19px 29px 29px;
-margin: 0 auto 20px;
-background-color: #fff;
-border: 1px solid #e5e5e5;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-        border-radius: 5px;
--webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-        box-shadow: 0 1px 2px rgba(0,0,0,.05);
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-margin-bottom: 10px;
-}
-.form-signin input[type="text"],
-.form-signin input[type="password"] {
-font-size: 16px;
-height: auto;
-margin-bottom: 15px;
-padding: 7px 9px;
-      }
-</style>
-
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="../assets/js/html5shiv.js"></script>
-<![endif]-->
-
-<!-- Fav and touch icons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dl.dropbox.com/u/3601859/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dl.dropbox.com/u/3601859/assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dl.dropbox.com/u/3601859/assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="https://dl.dropbox.com/u/3601859/assets/ico/apple-touch-icon-57-precomposed.png">
-<link rel="shortcut icon" href="https://dl.dropbox.com/u/3601859/assets/ico/favicon.png">
-</head>
-
-<body>
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-
-            <div class="container">
-            	<img src="/img/bg.png" alt="">
-
-                <div class="carousel-caption">
-                    <h1>日程調整を、もっと楽しく</h1>
-
-                    <p class="lead">煩わしい日程にうんざりしたことはありませんか？
-                        Puduleを使えば、面倒な調整からは解放され、簡単に日程を調整することができます。
-                        そう、まるでパズルを楽しむように。
-                    <a class="btn btn-large btn-primary" href="https://dl.dropbox.com/u/3601859/AdjustInterview/brand.html#">今すぐ始める！</a>
-                </p></div>
+<html lang="ja">
+  <head>
+  <meta charset="utf-8">
+   <title>Padule - 日程調整をパズル感覚で</title>
+   <meta name="description" content="同じ候補日で複数の人を調整するのは大変ではありませんか。Padule（パジュール）を使うことで、簡単に早く調整することができます。">
+   <meta name="Keywords" content="調整,スケジュール,面接,日程,リクルート" />
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+   <link rel="stylesheet" href="css/default.css" type="text/css" />
+  </head>
+  <body>
+ <section class="container">
+     <div class="row">
+         <header class="span12">
+            <div id="lp_mac"><img src="img/mac.png" alt="PaduleUI" width="504" height="515"></div>
+            <div id="lp_logo"><img src="img/logo.png" alt="Padule" width="322" height="55"></div>
+            <p>同じ候補日で複数の人を調整するのは大変ではありませんか。Padule（パジュール）を使うことで、簡単に早く調整することができます。</p>
+            <form id="registerForms" action="/users/regist" method="post" accept-charset="utf-8">
+            <div id="msg_alert" style="display:none;"><p>※すべての項目を入力し、利用規約に同意してください。</p></div>
+            <div id="messageBox"></div> 
+                <div>
+                    <input type="text" name="TmpUser[company]" placeholder="会社名" class="forms"/>
+                </div>
+                <div>
+                    <input type="text" name="TmpUser[username]" placeholder="お名前" class="forms"/>
+                </div>
+                <div>
+                    <input type="text" name="TmpUser[mail]" placeholder="Eメール" class="forms"/>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="agreement"><a href="http://padule.me/agrement">利用規約</a><span>同意する</span>
+                </div>
+                <div>
+                    <input type="submit" value="仮登録する!!" id="btn_preRegister" />
+                </div>
+             </form>
+         </header>
+         <article class="span12" id="explain">
+             <ul>
+                <li class="feature">
+                    <div class="icons"><img src="img/icon_calendar.png" alt="icon_calendar" width="72" height="72"></div>
+                    <h1>シンプルで簡単に使える！</h1>
+                    <p>面接日時を設定して、URLを応募者に送るだけ。あとは応募者が自ら入力し、<br />希望日時が一覧で表示されます。</p>
+                </li>
+                <li class="feature">
+                    <div class="icons"><img src="img/icon_stack.png" alt="icon_stack" width="72" height="72"></div>
+                    <h1>スピーディーに調整できる！</h1>
+                    <p>URLを送ることで採用担当者様と応募者が直接調整できるので、人材会社が仲介して遅くなる心配もありません。</p>
+                </li>
+                <li class="feature">
+                    <div class="icons"><img src="img/icon_money.png" alt="icon_money" width="72" height="72"></div>
+                    <h1>基本利用料は無料！</h1>
+                    <p>本サービスは広告費にて運用致しますので、採用ご担当者様に費用は頂戴いたしません。社内承認不要でお気軽にお使いいただく事ができます。</p>
+                </li>
+             </ul>
+         </article><!-- explain -->
+         <article class="span12" id="screenshot">
+            <hr>
+            <div class="img_screenshots"><img src="img/web.png" alt="Web" width="458" height="391"></div>
+            <div id="captions">
+                <div>
+                    <h1>候補者全員を１ページで管理！</h1>
+                    <p>一人一人調整するのは煩雑ではありませんか？<br />Paduleなら候補者全員の候補日時を一括管理、<br />ご希望の選択して一斉に確定メールを送ることができます。</p>
+                </div>
+                <div>
+                    <h1>共通の入力画面で<br />ダブルブッキングの心配なし！</h1>
+                    <p>複数の候補者から同じ日時を希望されてお困りではありませんか?<br />Paduleなら候補日時はリアルタイムで更新されるので、<br />ダブルブッキングの心配はありません。</p>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- /.carousel -->
-<div class="container">
-<?php if ($login) { ?>
-<center><a class="btn btn-large btn-primary" href="/schedules/">スケジュールの調整をする</a></center>
-<?php }else{ ?>
-        <form class="form-signin" action="/users/add" id="UserAddForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
-            <h3>PADULE 事前登録</h3>
-            <p>パズル感覚の面接スケジュール調整ツール『PADULE』事前予約を受付中です。<br /><br />ご興味のある方はメールアドレスをご登録ください！</p>
-        <input type="text" name="data[User][username]" class="input-block-level" placeholder="メールアドレスを入力してください。" label="">
-
-        <button class="btn btn-large btn-primary" type="submit">事前登録する！</button>
-
-      </form>
-<?php } ?>
-    </div> <!-- /container -->
-
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
-<div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-
-            <h2>シンプルで<br />簡単に使える！</h2>
-
-            <p>面接内容を設定して、URLを応募者に送るだけ。あとは応募者が自ら入力し、システムが自動的に適切な日程調整を採用担当者様にご推薦いたします。</p>
-
-        </div>
-        <!-- /.span4 -->
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-
-            <h2>スピーディーに<br />調整できる！</h2>
-
-            <p>URLを送るだけで採用担当者様と応募者が直接、調整できるので、人材会社が仲介して遅くなる心配もありません。</p>
-        </div>
-        <!-- /.span4 -->
-
-        <div class="span4">
-            <img class="img-circle" data-src="/js/holder.js/140x140">
-
-            <h2>一切費用は<br />かかりません！</h2>
-
-            <p>本サービスは広告費で運用されておりますので、採用ご担当者様に費用は頂戴いたしません。社内承認不要でお気軽にお使いいただく事ができます。</p>
-
-        </div>
-        <!-- /.span4 -->
-    </div>
-    <!-- /.row -->
-
-    <br><br>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>© 2013 Padule Inc. ·  · started by <a href="http://tokyo.startupweekend.org/">Startup Weekend Tokyo</a></p>
-    </footer>
-
-</div>
-<!-- /.container -->
-<!-- Le javascript
-================================================== -->
-
-
-
-</body></html>
+        </article><!-- sreenshot -->
+        <article class="span12" id="screenshotSmart">
+            <hr>
+            <div id="caption_smart">
+                <h1>スマートフォン対応で簡単入力！</h1>
+                <p>求職者からの返信が遅く感じませんか？<br />Paduleならスマートフォン対応でいつでもどこでも簡単に返信できるので、<br />今まで以上に早い返信が期待できます。</p>
+            </div>
+            <div id="img_screenshotsSmart"><img src="img/mobile.png" alt="SmartPhone" width="208" height="338"></div>
+        </article><!-- sreenshot -->
+        <footer class="span12">
+            <p><推奨動作環境>　OS : Windows 7以上, Mac X以上 / ブラウザ : IE8以上, Chrome 最新版</p>
+             <ul>
+                <li><a href="http://padule.me">プライバシーポリシー</a></li>
+                <li><a href="support@padule.me">お問い合わせ</a></li>
+             </ul>
+        </footer>
+     </div><!-- row -->
+ </section><!-- container -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/default.js"></script>
+  </body>
+</html>

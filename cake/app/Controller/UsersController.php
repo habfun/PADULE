@@ -148,9 +148,11 @@ var $uses = array('User','Company','TmpUser');
                 $Email->config('regist');
                 $Email->to($this->request->data['TmpUser']['mail']);
                 $Email->viewVars($this->request->data['TmpUser']); //送信内容をテンプレートファイルに渡します
+                /*
                 if($Email->send()){
                     //メール送信が成功した場合ここで処理
                 }
+                */
                 $this->redirect('/users/complete');
             } else {
                 $this->redirect('/index.html');

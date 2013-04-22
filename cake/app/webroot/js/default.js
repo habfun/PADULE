@@ -21,7 +21,4 @@ $('#registerForms').validate({
    error.appendTo(element.parent("div").next("tdiv"));
     },
    
-}); 
-$.getJSON("http://padule.local/api/events/index.json", function(result) {
-alert(result);
 });
