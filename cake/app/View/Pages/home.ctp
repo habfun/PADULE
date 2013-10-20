@@ -46,8 +46,8 @@
                 </li>
                 <li class="feature">
                     <div class="icons"><img src="img/icon_stack.png" alt="icon_stack" width="72" height="72"></div>
-                    <h1>スピーディーに調整できる！</h1>
-                    <p>URLを送ることで採用担当者様と応募者が直接調整できるので、人材会社が仲介して遅くなる心配もありません。</p>
+                    <h1>ストレス無く調整できる！</h1>
+                    <p>求職者には最新の候補日を表示されるため、ダブルブッキングの心配はありません</p>
                 </li>
                 <li class="feature">
                     <div class="icons"><img src="img/icon_money.png" alt="icon_money" width="72" height="72"></div>
